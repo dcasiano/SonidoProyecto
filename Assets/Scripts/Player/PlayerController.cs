@@ -58,7 +58,6 @@ public class PlayerController : MonoBehaviour
         {
             isRolling = true;
             rollStartTime = Time.time;
-            emitter.Play();
             if (emitter) emitter.EventInstance.setParameterByNameWithLabel("Reverb", "Si");
         }
         if (isRolling && rollStartTime + rollTime < Time.time) isRolling = false;
