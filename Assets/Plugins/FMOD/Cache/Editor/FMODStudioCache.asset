@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638379249323249397
+  lastModified: 638379267905989708
   FileSizes:
   - Name: Desktop
     Value: 856
@@ -69,7 +69,7 @@ MonoBehaviour:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638379256005230194
+  cacheTime: 638379267906219521
   cacheVersion: 131609
 --- !u!114 &1482451030017046023
 MonoBehaviour:
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638379249323239415
+  lastModified: 638379267905979737
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -134,7 +134,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Ambiente.bank
   Name: Ambiente
   StudioPath: bank:/Ambiente
-  lastModified: 638379256005230194
+  lastModified: 638379267906219521
   FileSizes:
   - Name: Desktop
     Value: 2655776
