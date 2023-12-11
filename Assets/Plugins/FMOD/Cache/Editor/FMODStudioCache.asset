@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4496650563176250473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638379249323249397
+  FileSizes:
+  - Name: Desktop
+    Value: 856
+  Exists: 1
+--- !u!114 &-3672399857414652730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiente/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - No
+  - Si
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,10 +58,84 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
+  EditorBanks:
+  - {fileID: -4496650563176250473}
+  - {fileID: 1482451030017046023}
+  - {fileID: 3193172339076474208}
+  EditorEvents:
+  - {fileID: 1542345527043619885}
   EditorParameters: []
-  MasterBanks: []
-  StringsBanks: []
-  cacheTime: 0
+  MasterBanks:
+  - {fileID: 1482451030017046023}
+  StringsBanks:
+  - {fileID: -4496650563176250473}
+  cacheTime: 638379256005230194
   cacheVersion: 131609
+--- !u!114 &1482451030017046023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638379249323239415
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &1542345527043619885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente
+  Guid:
+    Data1: -1736909134
+    Data2: 1323694679
+    Data3: -256103543
+    Data4: 1419952137
+  Banks:
+  - {fileID: 3193172339076474208}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3672399857414652730}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176040
+--- !u!114 &3193172339076474208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiente.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/Ambiente.bank
+  Name: Ambiente
+  StudioPath: bank:/Ambiente
+  lastModified: 638379256005230194
+  FileSizes:
+  - Name: Desktop
+    Value: 2655776
+  Exists: 1

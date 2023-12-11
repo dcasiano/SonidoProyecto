@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
     private bool spellAttacking = false;
     private float spellTime = 0.5f, spellStartTime;
 
+    FMODUnity.StudioEventEmitter emitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,8 @@ public class PlayerController : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         attackArea.SetActive(false);
+        emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
+        if (emitter) Debug.Log("Emitter encontrado");
     }
 
     // Update is called once per frame
@@ -49,12 +52,13 @@ public class PlayerController : MonoBehaviour
     {
         // run
         isRunning = Input.GetKey(KeyCode.LeftShift);
-
+ 
         // roll
         if (!isRolling && Input.GetKeyDown(KeyCode.Space))
         {
             isRolling = true;
             rollStartTime = Time.time;
+            if (emitter) emitter.EventInstance.setParameterByNameWithLabel("Reverb", "Si");
         }
         if (isRolling && rollStartTime + rollTime < Time.time) isRolling = false;
 
