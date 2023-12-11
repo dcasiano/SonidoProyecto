@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8dcba26c-014b-4bff-be2b-c3321f7a2b71}">
+		<property name="name">
+			<value>Vida</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6b5bca32-514a-4e9c-a170-d6b95bb8eeea}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a78c9827-e19a-4041-a895-fb6ed8088e8b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a78c9827-e19a-4041-a895-fb6ed8088e8b}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>
