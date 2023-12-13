@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7f5a631d-565e-4b75-8c65-9908691774aa}">
+		<property name="assetPath">
+			<value>Player/andar_jugador_5t.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.63002267573696147</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>
+		</relationship>
+	</object>
+</objects>

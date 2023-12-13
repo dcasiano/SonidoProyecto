@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         ResetAnimations();
+        emitter.EventInstance.setParameterByName("Movement", 0);
 
         if (isDead)
         {
@@ -99,7 +100,11 @@ public class PlayerController : MonoBehaviour
         float movimientoHorizontal = Input.GetAxis("Horizontal");
         float movimientoVertical = Input.GetAxis("Vertical");
 
-        if (movimientoHorizontal != 0 || movimientoVertical != 0) anim.SetBool("isWalking", true);
+        if (movimientoHorizontal != 0 || movimientoVertical != 0)
+        {
+            anim.SetBool("isWalking", true);
+            emitter.EventInstance.setParameterByName("Movement", 1);
+        }
 
 
         Vector3 direccionCamara = cameraTransform.forward;
@@ -113,11 +118,13 @@ public class PlayerController : MonoBehaviour
         {
             currentSpeed = 2 * speed;
             anim.SetBool("isRunning", true);
+            emitter.EventInstance.setParameterByName("Movement", 2);
         }
         if (isRolling)
         {
             currentSpeed = 2 * speed;
             anim.SetBool("isRolling", true);
+            emitter.EventInstance.setParameterByName("Movement", 0);
         }
         if (swordAttacking)
         {
