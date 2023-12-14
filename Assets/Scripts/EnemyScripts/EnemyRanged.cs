@@ -38,7 +38,9 @@ public class EnemyRanged : MonoBehaviour
     private int helpNeed = 0;
     private int helpers = 0;
 
-
+    //Sonido
+    FMODUnity.StudioEventEmitter hacha;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,7 @@ public class EnemyRanged : MonoBehaviour
         anim.SetBool("Ranged", true);
         EmptyEnemies = GameObject.Find("EnemyEmpty");
 
+        hacha = GetComponentInChildren<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -102,6 +105,7 @@ public class EnemyRanged : MonoBehaviour
 
         GameObject proyectile = Instantiate(proyectilePref, transform.position + dir * 4 + new Vector3(0, 2, 0), Quaternion.identity);
         proyectile.GetComponent<EnemyProyectile>().setDirection(dir);
+        hacha.Play();
     }
 
     //merodeo

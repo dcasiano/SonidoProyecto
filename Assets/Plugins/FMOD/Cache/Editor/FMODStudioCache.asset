@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381569338101195
+  lastModified: 638381764458628512
   FileSizes:
   - Name: Desktop
-    Value: 15648
+    Value: 15712
   Exists: 1
 --- !u!114 &-5479466367748710098
 MonoBehaviour:
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381582420416161
+  lastModified: 638381764458688352
   FileSizes:
   - Name: Desktop
     Value: 1300
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381582420653223
+  cacheTime: 638381764458688352
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -182,7 +182,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381582420396216
+  lastModified: 638381764458668407
   FileSizes:
   - Name: Desktop
     Value: 1218
@@ -266,7 +266,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -7923942353449328486}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1

@@ -5,7 +5,7 @@
 			<value>HachaEnemigo</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{79fab3bc-5771-4308-9d45-6c34df3bb166}</destination>
@@ -92,9 +92,6 @@
 		<property name="length">
 			<value>2.0046938775510204</value>
 		</property>
-		<relationship name="modulators">
-			<destination>{5f99b6ea-e32b-4dca-a5a0-a7e368a18efb}</destination>
-		</relationship>
 		<relationship name="audioFile">
 			<destination>{209cbe63-0419-482f-a15c-b3a4efb91a46}</destination>
 		</relationship>
@@ -120,20 +117,21 @@
 	</object>
 	<object class="MixerBusPanner" id="{390ab1b1-8887-49d1-9800-2d3b3ea84090}" />
 	<object class="MixerBusFader" id="{7af53999-8c29-4036-871e-87c957ad97e4}" />
-	<object class="RandomizerModulator" id="{5f99b6ea-e32b-4dca-a5a0-a7e368a18efb}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>7.5</value>
-		</property>
-	</object>
 	<object class="MixerBusEffectChain" id="{70669b14-1e6f-43ee-8072-0d35a189788b}">
 		<relationship name="effects">
 			<destination>{35cbba2d-657c-480c-997d-5f3834529e39}</destination>
+			<destination>{630b89d1-0bb3-47d8-99e2-1308bde50362}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3f5d6931-2c39-419f-88e3-b0a6d00deb82}" />
 	<object class="MixerBusFader" id="{4ddd3eb5-1b6c-4607-b3d2-53a72c7e2d7d}" />
 	<object class="MixerBusFader" id="{35cbba2d-657c-480c-997d-5f3834529e39}" />
+	<object class="SpatialiserEffect" id="{630b89d1-0bb3-47d8-99e2-1308bde50362}">
+		<property name="maximumDistance">
+			<value>100</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>
