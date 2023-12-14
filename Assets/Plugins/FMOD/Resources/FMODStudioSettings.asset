@@ -453,6 +453,7 @@ MonoBehaviour:
   Banks:
   - BGM
   - EnemySFX
+  - Others
   - PlayerMovement
   - PlayerSwordAttack
   BanksToLoad:

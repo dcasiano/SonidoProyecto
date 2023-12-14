@@ -39,10 +39,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381907551880726
+  lastModified: 638381912204562862
   FileSizes:
   - Name: Desktop
-    Value: 64192
+    Value: 69856
   Exists: 1
 --- !u!114 &-6454637528121972309
 MonoBehaviour:
@@ -68,6 +68,57 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5923312214990895502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Boss
+  m_EditorClassIdentifier: 
+  Name: Boss
+  StudioPath: parameter:/Boss
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3776645229
+    data2: 214401080
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5667142503585957080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/JugadorAtacado
+  m_EditorClassIdentifier: 
+  Path: event:/JugadorAtacado
+  Guid:
+    Data1: -330876001
+    Data2: 1331233536
+    Data3: 25780149
+    Data4: -1470614574
+  Banks:
+  - {fileID: -7305927427929535019}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 391
 --- !u!114 &-5551726533492627865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,10 +212,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381908378476595
+  lastModified: 638381912203886331
   FileSizes:
   - Name: Desktop
-    Value: 26816
+    Value: 41472
   Exists: 1
 --- !u!114 &-2701700394671411080
 MonoBehaviour:
@@ -181,10 +232,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381907551672625
+  lastModified: 638381912203943008
   FileSizes:
   - Name: Desktop
-    Value: 1550
+    Value: 1680
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -205,6 +256,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   - {fileID: -7305927427929535019}
   - {fileID: 6624637774618417616}
+  - {fileID: 8358026264281388741}
   EditorEvents:
   - {fileID: 4813325953663150308}
   - {fileID: 2300054145303546221}
@@ -214,13 +266,16 @@ MonoBehaviour:
   - {fileID: 6784778959591126986}
   - {fileID: 2257988521178966917}
   - {fileID: -5551726533492627865}
+  - {fileID: 9220073360956722054}
+  - {fileID: -5667142503585957080}
   EditorParameters:
   - {fileID: -5051430448290824846}
+  - {fileID: -5923312214990895502}
   MasterBanks:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638381908378476595
+  cacheTime: 638381912205221103
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -243,7 +298,7 @@ MonoBehaviour:
     data1: 3776645229
     data2: 214401080
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &2257988521178966917
@@ -271,7 +326,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 90
   Length: 500
 --- !u!114 &2300054145303546221
 MonoBehaviour:
@@ -374,10 +429,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381907373741456
+  lastModified: 638381912203686858
   FileSizes:
   - Name: Desktop
-    Value: 589056
+    Value: 589152
   Exists: 1
 --- !u!114 &6104489914891687737
 MonoBehaviour:
@@ -445,7 +500,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSwordAttack.bank
   Name: PlayerSwordAttack
   StudioPath: bank:/PlayerSwordAttack
-  lastModified: 638381886345007772
+  lastModified: 638381912205221103
   FileSizes:
   - Name: Desktop
     Value: 60256
@@ -475,8 +530,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  MaxDistance: 80
+  Length: 1081
 --- !u!114 &7777624125797463180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,10 +547,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381907551662630
+  lastModified: 638381912203933033
   FileSizes:
   - Name: Desktop
-    Value: 1218
+    Value: 1374
   Exists: 1
 --- !u!114 &8142295507436138645
 MonoBehaviour:
@@ -520,6 +575,26 @@ MonoBehaviour:
   Type: 1
   IsGlobal: 0
   Labels: []
+  Exists: 1
+--- !u!114 &8358026264281388741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Others.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/Others.bank
+  Name: Others
+  StudioPath: bank:/Others
+  lastModified: 638381912204122528
+  FileSizes:
+  - Name: Desktop
+    Value: 152640
   Exists: 1
 --- !u!114 &8858737230394266801
 MonoBehaviour:
@@ -549,3 +624,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &9220073360956722054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Puerta
+  m_EditorClassIdentifier: 
+  Path: event:/Puerta
+  Guid:
+    Data1: -297205148
+    Data2: 1075233715
+    Data3: 990611591
+    Data4: -352073151
+  Banks:
+  - {fileID: 8358026264281388741}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 65
+  Length: 12144
