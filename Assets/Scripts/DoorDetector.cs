@@ -9,6 +9,8 @@ public class DoorDetector : MonoBehaviour
 {
     public GameObject boss;
     public GameObject door;
+    public GameObject LDoor;
+    public GameObject RDoor;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,11 @@ public class DoorDetector : MonoBehaviour
         if(other.gameObject.GetComponent<PlayerController>() != null)
         {
             boss.GetComponent<FinalBoss>().AwakeBoss();
-            door.SetActive(true);
+            door.GetComponent<BoxCollider>().enabled=true;
+            LDoor.SetActive(true);
+            LDoor.GetComponent<Animator>().enabled = false;
+            RDoor.SetActive(true);
+            RDoor.GetComponent<Animator>().enabled = false;
             gameObject.SetActive(false);
         }
     }

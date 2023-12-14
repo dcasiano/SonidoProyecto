@@ -40,7 +40,8 @@ public class EnemyRanged : MonoBehaviour
 
     //Sonido
     FMODUnity.StudioEventEmitter hacha;
-    
+    FMODUnity.StudioEventEmitter pasos;
+    FMOD.Studio.EventInstance hechizo;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,12 +53,22 @@ public class EnemyRanged : MonoBehaviour
         anim.SetBool("Ranged", true);
         EmptyEnemies = GameObject.Find("EnemyEmpty");
 
+        pasos = GetComponent<FMODUnity.StudioEventEmitter>();
         hacha = GetComponentInChildren<FMODUnity.StudioEventEmitter>();
+        hechizo = FMODUnity.RuntimeManager.CreateInstance("event:/HechizoEnemigo");
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+        {
+            if (!pasos.IsPlaying())
+                pasos.Play();
+        }
+
+
         //aiming the player
         Quaternion rotTarget = Quaternion.LookRotation(playerTr.position - this.transform.position);
         this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, rotTarget, rotSpeed*Time.deltaTime);
@@ -126,6 +137,7 @@ public class EnemyRanged : MonoBehaviour
         else if(helping)
         {
             pMerodeo = helpTr.position;
+            hechizo.setParameterByName("Charge",Vector3.Distance(pMerodeo.normalized, transform.position.normalized));
             if (Vector3.Distance(pMerodeo, transform.position) < 3f)
             {
                 pMerodeo = transform.position;
@@ -142,6 +154,7 @@ public class EnemyRanged : MonoBehaviour
             pMerodeo = puntoAleatorio();
         }
         myNavMesh.SetDestination(pMerodeo);
+      
     }
 
     private bool getCharging()
@@ -198,7 +211,8 @@ public class EnemyRanged : MonoBehaviour
 
         GameObject proyectile = Instantiate(spellPref, transform.position + dir * 4 + new Vector3(0, 2, 0), Quaternion.identity);
         proyectile.GetComponent<EnemyProyectile>().setDirection(dir);
-
+        hechizo.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(proyectile));
+        hechizo.start();
         for (int i = 0; i < EmptyEnemies.transform.childCount; i++)
         {
             Transform child = EmptyEnemies.transform.GetChild(i);
