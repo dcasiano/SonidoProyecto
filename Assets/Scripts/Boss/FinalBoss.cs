@@ -89,6 +89,7 @@ public class FinalBoss : MonoBehaviour
         if (isStunned && stunStartTime + stunDuration < Time.time)
         {
             isStunned = false;
+            GameManager.GetInstance().SetBossAttackCancelled(false);
         }
 
         // Activamos el escudo si un hechizo del jugador impactara al boss
@@ -202,6 +203,7 @@ public class FinalBoss : MonoBehaviour
     public void CancelAttack()
     {
         swordAttackCancelled = true;
+        GameManager.GetInstance().SetBossAttackCancelled(true);
         StunBoss();
     }
     public void onChasingStateEnter()

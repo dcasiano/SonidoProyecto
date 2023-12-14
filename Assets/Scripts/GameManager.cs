@@ -8,15 +8,34 @@ using UnityEngine.SceneManagement;
 // correspondientes recargas de escena.
 public class GameManager : MonoBehaviour
 {
+    private static GameManager Instance;
     public GameObject boss;
     public GameObject player;
     public GameObject door;
     private int numEnemies = 5;
     private bool playerDead = false;
+    private bool bossAttackCancelled = false;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+    private void Awake()
+    {
+        // Check if the UI Manager doesn't already exist
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+    public static GameManager GetInstance()
+    {
+        return Instance;
     }
 
     // Update is called once per frame
@@ -45,5 +64,13 @@ public class GameManager : MonoBehaviour
     {
         int escenaActual = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(escenaActual);
+    }
+    public void SetBossAttackCancelled(bool value)
+    {
+        bossAttackCancelled = value;
+    }
+    public bool GetBossAttackCancelled()
+    {
+        return bossAttackCancelled;
     }
 }

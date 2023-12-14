@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerAttackArea : MonoBehaviour
 {
     private bool attackIsDone = false;
+    bool successfulAttack = false;
     void Start()
     {
         
@@ -14,6 +15,7 @@ public class PlayerAttackArea : MonoBehaviour
     private void OnEnable()
     {
         attackIsDone = false;
+        successfulAttack = false;
     }
     
 
@@ -30,17 +32,24 @@ public class PlayerAttackArea : MonoBehaviour
         {
             other.gameObject.GetComponent<BossFrontArea>().dealDamage(10);
             attackIsDone = true;
+            successfulAttack = true;
         }
         else if (other.gameObject.GetComponent<BossBackArea>() != null)
         {
             other.gameObject.GetComponent<BossBackArea>().dealDamage(20);
             attackIsDone = true;
+            successfulAttack = true;
         }
 
         if (other.gameObject.GetComponent<Enemy>() != null)
         {
             other.gameObject.GetComponent<Enemy>().receiveDamage(10);
             attackIsDone = true;
+            successfulAttack = true;
         }
+    }
+    public bool GetSuccessfulAttack()
+    {
+        return successfulAttack;
     }
 }

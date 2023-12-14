@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{7a11c33c-5ce3-4b3c-9231-3562ef1e5388}">
+		<property name="name">
+			<value>SwordHitType</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6b5bca32-514a-4e9c-a170-d6b95bb8eeea}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{90c6eb1e-da01-454d-8723-b942ab293b4e}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{90c6eb1e-da01-454d-8723-b942ab293b4e}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

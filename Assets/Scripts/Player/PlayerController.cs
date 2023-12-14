@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 100;
     public GameObject spellPrefab;
     public GameObject attackArea;
+    public GameObject soundEmitters;
 
     private Rigidbody rb;
     private Transform cameraTransform;
@@ -33,6 +34,9 @@ public class PlayerController : MonoBehaviour
     private float spellTime = 0.5f, spellStartTime;
 
     FMODUnity.StudioEventEmitter moveEmitter;
+    FMODUnity.StudioEventEmitter rollEmitter;
+    FMODUnity.StudioEventEmitter swordEmitter;
+    FMODUnity.StudioEventEmitter swordClashEmitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +48,10 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         attackArea.SetActive(false);
         //emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
-        moveEmitter = transform.Find("MovSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        moveEmitter = soundEmitters.transform.Find("MovSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        rollEmitter = soundEmitters.transform.Find("RollSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        swordEmitter = soundEmitters.transform.Find("SwordSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        swordClashEmitter = soundEmitters.transform.Find("SwordsClashEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         //if (emitter) Debug.Log("Emitter encontrado");
 
     }
@@ -60,6 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             isRolling = true;
             rollStartTime = Time.time;
+            rollEmitter.Play();
             //if (emitter) emitter.EventInstance.setParameterByNameWithLabel("Reverb", "Si");
         }
         if (isRolling && rollStartTime + rollTime < Time.time) isRolling = false;
@@ -133,12 +141,23 @@ public class PlayerController : MonoBehaviour
         {
             currentSpeed = 0;
             anim.SetBool("swordAttacking", true);
-            
+            moveEmitter.EventInstance.setParameterByName("Movement", 0);
+            if (GameManager.GetInstance().GetBossAttackCancelled())
+            {
+                if (!swordClashEmitter.IsPlaying()) swordClashEmitter.Play();
+            }
+            else
+            {
+                if (attackArea.GetComponent<PlayerAttackArea>().GetSuccessfulAttack()) swordEmitter.EventInstance.setParameterByName("SwordHitType", 1);
+                else swordEmitter.EventInstance.setParameterByName("SwordHitType", 0);
+                if (!swordEmitter.IsPlaying()) swordEmitter.Play();
+            }
         }
         if (spellAttacking)
         {
             currentSpeed = 0;
             anim.SetBool("spellCasting", true);
+            moveEmitter.EventInstance.setParameterByName("Movement", 0);
         }
         
         Vector3 movimiento = (movimientoHorizontal * cameraTransform.right + movimientoVertical * direccionCamara) * currentSpeed;

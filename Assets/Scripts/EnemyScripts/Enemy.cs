@@ -13,7 +13,6 @@ public class Enemy : MonoBehaviour
     // eleccion de roles
     public enum Rol { Mele, Ranged, None }
     public Rol enemyRol = Rol.None;
-    public GameObject gameManager;
 
 
     void Start()
@@ -73,7 +72,7 @@ public class Enemy : MonoBehaviour
                     child.GetComponent<Enemy>().Reassign();
                 }
             }
-            gameManager.GetComponent<GameManager>().OnEnemyDead();
+            GameManager.GetInstance().OnEnemyDead();
             Destroy(this);
             Destroy(gameObject);
         }

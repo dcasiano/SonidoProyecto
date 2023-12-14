@@ -454,6 +454,7 @@ MonoBehaviour:
   - BGM
   - EnemySFX
   - PlayerMovement
+  - PlayerSwordAttack
   BanksToLoad:
   - Master
   - Master.strings

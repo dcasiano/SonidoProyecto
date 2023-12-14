@@ -5,7 +5,7 @@
 			<value>Ambiente</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{79fab3bc-5771-4308-9d45-6c34df3bb166}</destination>
@@ -424,7 +424,6 @@
 		<relationship name="effects">
 			<destination>{7f39b637-ba39-4930-907b-09ced9da0291}</destination>
 			<destination>{dfc7b8c0-c15e-4b9e-874a-df3939cd8e18}</destination>
-			<destination>{fdc0cc36-6dc7-4497-a16a-8e91ea578f79}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f45bb76d-cdd1-4ef3-933d-b2c0c8fd8577}" />
@@ -531,14 +530,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{dfc7b8c0-c15e-4b9e-874a-df3939cd8e18}" />
-	<object class="SpatialiserEffect" id="{fdc0cc36-6dc7-4497-a16a-8e91ea578f79}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-		<property name="extentMode">
-			<value>2</value>
-		</property>
-	</object>
 	<object class="AutomationPoint" id="{97d9c318-6c6d-4d39-b67c-66eb76d9bfbd}">
 		<property name="position">
 			<value>37.932698412698414</value>
