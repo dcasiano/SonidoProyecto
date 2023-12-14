@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381780021949885
+  lastModified: 638381785047119181
   FileSizes:
   - Name: Desktop
-    Value: 15712
+    Value: 26880
   Exists: 1
 --- !u!114 &-5479466367748710098
 MonoBehaviour:
@@ -69,8 +69,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  MaxDistance: 30
+  Length: 500
 --- !u!114 &-4496650563176250473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381780022029890
+  lastModified: 638381791856672985
   FileSizes:
   - Name: Desktop
     Value: 1300
@@ -117,11 +117,12 @@ MonoBehaviour:
   - {fileID: 2393974517290244461}
   EditorParameters:
   - {fileID: 1075511197596214427}
+  - {fileID: 8600503649990880737}
   MasterBanks:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381780022279891
+  cacheTime: 638381791856672985
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -138,10 +139,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381780021246738
+  lastModified: 638381791856603164
   FileSizes:
   - Name: Desktop
-    Value: 589344
+    Value: 589408
   Exists: 1
 --- !u!114 &1075511197596214427
 MonoBehaviour:
@@ -182,10 +183,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381780022019888
+  lastModified: 638381791856663137
   FileSizes:
   - Name: Desktop
-    Value: 1218
+    Value: 1374
   Exists: 1
 --- !u!114 &1542345527043619885
 MonoBehaviour:
@@ -287,7 +288,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381780022279891
+  lastModified: 638381790458231711
   FileSizes:
   - Name: Desktop
     Value: 59296
@@ -368,7 +369,7 @@ MonoBehaviour:
     data1: 3776645229
     data2: 214401080
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &6526077851434200012
@@ -392,6 +393,30 @@ MonoBehaviour:
     data1: 3115610141
     data2: 2410959346
   Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8600503649990880737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Boss
+  m_EditorClassIdentifier: 
+  Name: Boss
+  StudioPath: parameter:/Boss
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3776645229
+    data2: 214401080
+  Type: 1
   IsGlobal: 1
   Labels: []
   Exists: 1

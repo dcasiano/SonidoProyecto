@@ -56,7 +56,11 @@
 			<destination>{9223da31-b306-45f4-8f4a-a982d369522b}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{26405cb8-5827-4d1a-8884-28a5e859d26b}" />
+	<object class="EventAutomatableProperties" id="{26405cb8-5827-4d1a-8884-28a5e859d26b}">
+		<property name="maximumDistance">
+			<value>30</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{591537da-cb19-45a6-84ad-8ea017f526ef}" />
 	<object class="GroupTrack" id="{061c7b21-23a2-4a0d-8ec5-4425f367ef18}">
 		<relationship name="modules">
@@ -149,8 +153,14 @@
 	<object class="MixerBusPanner" id="{b71cf7e1-a941-4249-8d01-0bf690c1a3fa}" />
 	<object class="MixerBusFader" id="{2f1fe3c6-60eb-4e51-a644-4fefc56d5459}" />
 	<object class="SpatialiserEffect" id="{c12117c7-cccf-4823-8165-9f004853462c}">
-		<property name="panBlend">
-			<value>0.504999995</value>
+		<property name="distanceRolloffType">
+			<value>4</value>
+		</property>
+		<property name="userLFELevel">
+			<value>-4</value>
+		</property>
+		<property name="LFEUpmixEnabled">
+			<value>true</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{43e31703-27ab-4cfc-87f3-b244f41f0896}" />

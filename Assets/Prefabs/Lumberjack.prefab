@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2341373014540616371}
   - component: {fileID: 2341373014540616364}
   - component: {fileID: 2341373014540616360}
+  - component: {fileID: 5384717140741473222}
   m_Layer: 11
   m_Name: Lumberjack
   m_TagString: Untagged
@@ -169,6 +170,37 @@ MonoBehaviour:
   spellPref: {fileID: 189888125865032675, guid: c6f13b46b91e44d448cda0de13494b84,
     type: 3}
   chargeChance: 10
+--- !u!114 &5384717140741473222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341373014540616368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1205364811
+      Data2: 1150266595
+      Data3: -1363581767
+      Data4: -893015882
+    Path: event:/PasoEnemigo
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 30
 --- !u!1 &2341373014628781189
 GameObject:
   m_ObjectHideFlags: 0
