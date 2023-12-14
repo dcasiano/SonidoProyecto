@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     private bool spellAttacking = false;
     private float spellTime = 0.5f, spellStartTime;
 
-    FMODUnity.StudioEventEmitter emitter;
+    FMODUnity.StudioEventEmitter moveEmitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,8 +43,10 @@ public class PlayerController : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         attackArea.SetActive(false);
-        emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
-        if (emitter) Debug.Log("Emitter encontrado");
+        //emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
+        moveEmitter = transform.Find("MovSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        //if (emitter) Debug.Log("Emitter encontrado");
+
     }
 
     // Update is called once per frame
@@ -58,7 +60,7 @@ public class PlayerController : MonoBehaviour
         {
             isRolling = true;
             rollStartTime = Time.time;
-            if (emitter) emitter.EventInstance.setParameterByNameWithLabel("Reverb", "Si");
+            //if (emitter) emitter.EventInstance.setParameterByNameWithLabel("Reverb", "Si");
         }
         if (isRolling && rollStartTime + rollTime < Time.time) isRolling = false;
 
@@ -88,7 +90,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         ResetAnimations();
-        emitter.EventInstance.setParameterByName("Movement", 0);
+        if (!moveEmitter.IsPlaying()) moveEmitter.Play();
+        moveEmitter.EventInstance.setParameterByName("Movement", 0);
 
         if (isDead)
         {
@@ -103,7 +106,7 @@ public class PlayerController : MonoBehaviour
         if (movimientoHorizontal != 0 || movimientoVertical != 0)
         {
             anim.SetBool("isWalking", true);
-            emitter.EventInstance.setParameterByName("Movement", 1);
+            moveEmitter.EventInstance.setParameterByName("Movement", 1);
         }
 
 
@@ -118,13 +121,13 @@ public class PlayerController : MonoBehaviour
         {
             currentSpeed = 2 * speed;
             anim.SetBool("isRunning", true);
-            emitter.EventInstance.setParameterByName("Movement", 2);
+            moveEmitter.EventInstance.setParameterByName("Movement", 2);
         }
         if (isRolling)
         {
             currentSpeed = 2 * speed;
             anim.SetBool("isRolling", true);
-            emitter.EventInstance.setParameterByName("Movement", 0);
+            moveEmitter.EventInstance.setParameterByName("Movement", 0);
         }
         if (swordAttacking)
         {

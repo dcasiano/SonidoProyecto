@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381783505912984
+  lastModified: 638381817962886099
   FileSizes:
   - Name: Desktop
-    Value: 15712
+    Value: 26880
   Exists: 1
 --- !u!114 &-5479466367748710098
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 500
 --- !u!114 &-4496650563176250473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381783505922982
+  lastModified: 638381817962926094
   FileSizes:
   - Name: Desktop
     Value: 1300
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381783505922982
+  cacheTime: 638381817963556089
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -138,7 +138,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381783505912984
+  lastModified: 638381817962366090
   FileSizes:
   - Name: Desktop
     Value: 589344
@@ -182,7 +182,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381783505912984
+  lastModified: 638381817962916103
   FileSizes:
   - Name: Desktop
     Value: 1218
@@ -287,10 +287,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381783505922982
+  lastModified: 638381817963556089
   FileSizes:
   - Name: Desktop
-    Value: 59296
+    Value: 59008
   Exists: 1
 --- !u!114 &5441105247024675209
 MonoBehaviour:
@@ -313,7 +313,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3658240648638924286}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
   - {fileID: 8758536823824376357}
