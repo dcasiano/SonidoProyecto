@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject boss;
     public GameObject player;
+    public GameObject Ldoor;
+    public GameObject Rdoor;
     public GameObject door;
     private int numEnemies = 5;
     private bool playerDead = false;
@@ -37,8 +39,13 @@ public class GameManager : MonoBehaviour
         // Si matamos a todos, nos curamos y se desbloquea la siguiente zona
         if (numEnemies <= 0)
         {
+            FMOD.Studio.EventInstance puerta;
+            puerta = FMODUnity.RuntimeManager.CreateInstance("event:/Puerta");
+            puerta.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(door));
+            puerta.start();
             player.GetComponent<PlayerController>().Heal();
-            door.SetActive(false);
+            Ldoor.GetComponent<Animator>().enabled=true;
+            Rdoor.GetComponent<Animator>().enabled =true;
         }
     }
     public void ReloadScene()
