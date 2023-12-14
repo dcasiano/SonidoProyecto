@@ -30,17 +30,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ambiente/Vida
+  m_Name: parameter:/Ambiente/VidaBaja
   m_EditorClassIdentifier: 
-  Name: Vida
+  Name: VidaBaja
   StudioPath: 
   Min: 0
   Max: 1
-  Default: 1
+  Default: 0
   ID:
     data1: 2838949620
     data2: 83255450
-  Type: 0
+  Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -86,10 +86,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381570849628054
+  lastModified: 638381582420416161
   FileSizes:
   - Name: Desktop
-    Value: 1260
+    Value: 1300
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -115,12 +115,13 @@ MonoBehaviour:
   - {fileID: 5515099582039314188}
   - {fileID: -5307405855769877817}
   - {fileID: 2393974517290244461}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: 1075511197596214427}
   MasterBanks:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381574623509485
+  cacheTime: 638381582420653223
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -137,10 +138,34 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381574623509485
+  lastModified: 638381582420653223
   FileSizes:
   - Name: Desktop
-    Value: 588576
+    Value: 589344
+  Exists: 1
+--- !u!114 &1075511197596214427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: parameter:/Reverb
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &1482451030017046023
 MonoBehaviour:
@@ -157,10 +182,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381570849618080
+  lastModified: 638381582420396216
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1218
   Exists: 1
 --- !u!114 &1542345527043619885
 MonoBehaviour:
@@ -189,6 +214,7 @@ MonoBehaviour:
   - {fileID: 2286900472679063416}
   - {fileID: -5479466367748710098}
   - {fileID: 6508068569323766866}
+  - {fileID: 6526077851434200012}
   MinDistance: 1
   MaxDistance: 20
   Length: 62134
@@ -343,6 +369,30 @@ MonoBehaviour:
     data2: 214401080
   Type: 1
   IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6526077851434200012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiente/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &8758536823824376357
