@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381780021949885
+  lastModified: 638381783505912984
   FileSizes:
   - Name: Desktop
     Value: 15712
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381780022029890
+  lastModified: 638381783505922982
   FileSizes:
   - Name: Desktop
     Value: 1300
@@ -121,7 +121,7 @@ MonoBehaviour:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381780022279891
+  cacheTime: 638381783505922982
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -138,7 +138,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381780021246738
+  lastModified: 638381783505912984
   FileSizes:
   - Name: Desktop
     Value: 589344
@@ -182,7 +182,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381780022019888
+  lastModified: 638381783505912984
   FileSizes:
   - Name: Desktop
     Value: 1218
@@ -287,7 +287,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381780022279891
+  lastModified: 638381783505922982
   FileSizes:
   - Name: Desktop
     Value: 59296
