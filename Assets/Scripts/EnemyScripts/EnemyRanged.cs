@@ -40,7 +40,7 @@ public class EnemyRanged : MonoBehaviour
 
     //Sonido
     FMODUnity.StudioEventEmitter hacha;
-    
+    FMODUnity.StudioEventEmitter pasos;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,12 +52,22 @@ public class EnemyRanged : MonoBehaviour
         anim.SetBool("Ranged", true);
         EmptyEnemies = GameObject.Find("EnemyEmpty");
 
+        pasos = GetComponent<FMODUnity.StudioEventEmitter>();
         hacha = GetComponentInChildren<FMODUnity.StudioEventEmitter>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+        {
+            if (!pasos.IsPlaying())
+                pasos.Play();
+        }
+
+
         //aiming the player
         Quaternion rotTarget = Quaternion.LookRotation(playerTr.position - this.transform.position);
         this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, rotTarget, rotSpeed*Time.deltaTime);
@@ -142,6 +152,7 @@ public class EnemyRanged : MonoBehaviour
             pMerodeo = puntoAleatorio();
         }
         myNavMesh.SetDestination(pMerodeo);
+      
     }
 
     private bool getCharging()

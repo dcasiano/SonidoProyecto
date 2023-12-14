@@ -18,7 +18,7 @@ public class EnemyMele : MonoBehaviour
     private bool isResting = false;
     private float restTime = 1.5f, restStartTime;
 
-
+    FMODUnity.StudioEventEmitter pasos;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class EnemyMele : MonoBehaviour
         myNavMesh.angularSpeed = 120;
         anim.SetBool("Ranged", false);
         GetComponent<NavMeshAgent>().speed = 5;
+        pasos = GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -67,7 +68,13 @@ public class EnemyMele : MonoBehaviour
         {
             myNavMesh.SetDestination(rb.position);
         }
-
+ 
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk"))
+        {
+            if (!pasos.IsPlaying())
+                pasos.Play();
+        }
+      
     }
     public void activateAttArea()
     {
