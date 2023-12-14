@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{5b1e2642-276e-4f54-bb2a-9418b7301657}">
+	<object class="AudioFile" id="{4cc560d8-917f-41f3-9b33-bfa03850ad18}">
 		<property name="assetPath">
 			<value>PasoEnemigo3.ogg</value>
 		</property>

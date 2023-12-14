@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         moveEmitter = soundEmitters.transform.Find("MovSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         rollEmitter = soundEmitters.transform.Find("RollSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         swordEmitter = soundEmitters.transform.Find("SwordSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
-        swordClashEmitter = soundEmitters.transform.Find("SwordsClashEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        swordClashEmitter = soundEmitters.transform.Find("SwordsClashSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         //if (emitter) Debug.Log("Emitter encontrado");
 
     }

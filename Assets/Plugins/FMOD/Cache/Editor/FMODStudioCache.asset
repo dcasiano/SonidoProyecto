@@ -39,7 +39,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381854383633499
+  lastModified: 638381907551880726
   FileSizes:
   - Name: Desktop
     Value: 64192
@@ -68,6 +68,33 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-5551726533492627865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HachaEnemigo
+  m_EditorClassIdentifier: 
+  Path: event:/HachaEnemigo
+  Guid:
+    Data1: -1304659104
+    Data2: 1168530524
+    Data3: -1686925161
+    Data4: -386648667
+  Banks:
+  - {fileID: -3433029383019282934}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2004
 --- !u!114 &-5051430448290824846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,10 +161,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381903967098299
+  lastModified: 638381908378476595
   FileSizes:
   - Name: Desktop
-    Value: 41472
+    Value: 26816
   Exists: 1
 --- !u!114 &-2701700394671411080
 MonoBehaviour:
@@ -154,38 +181,11 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381886344812526
+  lastModified: 638381907551672625
   FileSizes:
   - Name: Desktop
     Value: 1550
   Exists: 1
---- !u!114 &-1699629995013692957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/VolteretaJugador
-  m_EditorClassIdentifier: 
-  Path: event:/VolteretaJugador
-  Guid:
-    Data1: -2053935219
-    Data2: 1294357305
-    Data3: 726086052
-    Data4: 58802623
-  Banks:
-  - {fileID: -7305927427929535019}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 662
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,25 +203,24 @@ MonoBehaviour:
   - {fileID: 5502855417963203280}
   - {fileID: -3433029383019282934}
   - {fileID: 7777624125797463180}
-  - {fileID: 6486283872542247797}
   - {fileID: -7305927427929535019}
   - {fileID: 6624637774618417616}
   EditorEvents:
   - {fileID: 4813325953663150308}
-  - {fileID: 8880807218118133455}
-  - {fileID: 1597097947433361679}
-  - {fileID: 7194457325701393664}
   - {fileID: 2300054145303546221}
-  - {fileID: -1699629995013692957}
   - {fileID: 5177845321522677747}
   - {fileID: 8858737230394266801}
+  - {fileID: 6104489914891687737}
+  - {fileID: 6784778959591126986}
+  - {fileID: 2257988521178966917}
+  - {fileID: -5551726533492627865}
   EditorParameters:
   - {fileID: -5051430448290824846}
   MasterBanks:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 0
+  cacheTime: 638381908378476595
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -247,7 +246,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &1597097947433361679
+--- !u!114 &2257988521178966917
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,7 +271,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 90
+  MaxDistance: 20
   Length: 500
 --- !u!114 &2300054145303546221
 MonoBehaviour:
@@ -375,11 +374,38 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381900708923167
+  lastModified: 638381907373741456
   FileSizes:
   - Name: Desktop
     Value: 589056
   Exists: 1
+--- !u!114 &6104489914891687737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VolteretaJugador
+  m_EditorClassIdentifier: 
+  Path: event:/VolteretaJugador
+  Guid:
+    Data1: -2053935219
+    Data2: 1294357305
+    Data3: 726086052
+    Data4: 58802623
+  Banks:
+  - {fileID: -7305927427929535019}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 662
 --- !u!114 &6442998476236520094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,26 +430,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6486283872542247797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Others.bank
-  m_EditorClassIdentifier: 
-  Path: FmodProject/Sonidos/Build/Desktop/Others.bank
-  Name: Others
-  StudioPath: 
-  lastModified: 638381903967138287
-  FileSizes:
-  - Name: Desktop
-    Value: 152640
-  Exists: 1
 --- !u!114 &6624637774618417616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,7 +450,7 @@ MonoBehaviour:
   - Name: Desktop
     Value: 60256
   Exists: 1
---- !u!114 &7194457325701393664
+--- !u!114 &6784778959591126986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -454,14 +460,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HachaEnemigo
+  m_Name: event:/HechizoEnemigo
   m_EditorClassIdentifier: 
-  Path: event:/HachaEnemigo
+  Path: event:/HechizoEnemigo
   Guid:
-    Data1: -1304659104
-    Data2: 1168530524
-    Data3: -1686925161
-    Data4: -386648667
+    Data1: 1535293441
+    Data2: 1288012494
+    Data3: 1026960772
+    Data4: 233394728
   Banks:
   - {fileID: -3433029383019282934}
   IsStream: 0
@@ -470,7 +476,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2004
+  Length: 0
 --- !u!114 &7777624125797463180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,7 +492,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381886344802524
+  lastModified: 638381907551662630
   FileSizes:
   - Name: Desktop
     Value: 1218
@@ -543,30 +549,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
---- !u!114 &8880807218118133455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/HechizoEnemigo
-  m_EditorClassIdentifier: 
-  Path: event:/HechizoEnemigo
-  Guid:
-    Data1: 1535293441
-    Data2: 1288012494
-    Data3: 1026960772
-    Data4: 233394728
-  Banks:
-  - {fileID: -3433029383019282934}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 80
-  Length: 1081
