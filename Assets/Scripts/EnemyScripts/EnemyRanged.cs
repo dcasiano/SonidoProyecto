@@ -137,6 +137,7 @@ public class EnemyRanged : MonoBehaviour
         else if(helping)
         {
             pMerodeo = helpTr.position;
+            hechizo.setParameterByName("Charge",Vector3.Distance(pMerodeo.normalized, transform.position.normalized));
             if (Vector3.Distance(pMerodeo, transform.position) < 3f)
             {
                 pMerodeo = transform.position;

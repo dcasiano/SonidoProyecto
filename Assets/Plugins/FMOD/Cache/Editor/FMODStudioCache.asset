@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381843047065289
+  lastModified: 638381868081005614
   FileSizes:
   - Name: Desktop
-    Value: 41472
+    Value: 41664
   Exists: 1
 --- !u!114 &-5479466367748710098
 MonoBehaviour:
@@ -41,6 +41,30 @@ MonoBehaviour:
     data1: 2838949620
     data2: 83255450
   Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5385331357375079345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/HechizoEnemigo/Charge
+  m_EditorClassIdentifier: 
+  Name: Charge
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3658882880
+    data2: 730063448
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
@@ -86,10 +110,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381791856672985
+  lastModified: 638381861710654451
   FileSizes:
   - Name: Desktop
-    Value: 1300
+    Value: 1382
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -115,6 +139,7 @@ MonoBehaviour:
   - {fileID: 5515099582039314188}
   - {fileID: -5307405855769877817}
   - {fileID: 2393974517290244461}
+  - {fileID: 1751890029441697644}
   EditorParameters:
   - {fileID: 1075511197596214427}
   - {fileID: 8600503649990880737}
@@ -122,7 +147,7 @@ MonoBehaviour:
   - {fileID: 1482451030017046023}
   StringsBanks:
   - {fileID: -4496650563176250473}
-  cacheTime: 638381843047065289
+  cacheTime: 638381869168274344
   cacheVersion: 131609
 --- !u!114 &257051531110444926
 MonoBehaviour:
@@ -139,7 +164,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381791856603164
+  lastModified: 638381861710175738
   FileSizes:
   - Name: Desktop
     Value: 589408
@@ -183,7 +208,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381791856663137
+  lastModified: 638381861710644479
   FileSizes:
   - Name: Desktop
     Value: 1374
@@ -219,6 +244,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 62134
+--- !u!114 &1751890029441697644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/JugadorAtacado
+  m_EditorClassIdentifier: 
+  Path: event:/JugadorAtacado
+  Guid:
+    Data1: -330876001
+    Data2: 1331233536
+    Data3: 25780149
+    Data4: -1470614574
+  Banks:
+  - {fileID: 3658240648638924286}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 391
 --- !u!114 &2286900472679063416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,10 +340,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381831401094136
+  lastModified: 638381869168274344
   FileSizes:
   - Name: Desktop
-    Value: 59008
+    Value: 64640
   Exists: 1
 --- !u!114 &5441105247024675209
 MonoBehaviour:
@@ -344,7 +396,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -5385331357375079345}
   MinDistance: 1
   MaxDistance: 80
   Length: 1081
