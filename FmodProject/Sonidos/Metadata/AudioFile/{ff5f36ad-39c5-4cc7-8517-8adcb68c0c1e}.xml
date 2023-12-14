@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{0a1d9333-3380-4d55-a63d-f83950fa897f}">
+	<object class="AudioFile" id="{ff5f36ad-39c5-4cc7-8517-8adcb68c0c1e}">
 		<property name="assetPath">
-			<value>BGM/musicaCombateFin.wav</value>
+			<value>puertaAbriendose.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
@@ -14,7 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>11.879274376417234</value>
+			<value>12.144036281179138</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>

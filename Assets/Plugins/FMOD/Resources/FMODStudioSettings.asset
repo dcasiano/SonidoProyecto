@@ -451,7 +451,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Ambiente
+  - BGM
+  - EnemySFX
   - PlayerMovement
   BanksToLoad:
   - Master
