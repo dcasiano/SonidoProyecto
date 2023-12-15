@@ -9,10 +9,12 @@ public class PlayerSpell : MonoBehaviour
     public float speed = 100f;
     private Vector3 direction;
     private float lifeTime = 5f, spawnTime;
+    FMODUnity.StudioEventEmitter spellEmitter;
     // Start is called before the first frame update
     void Start()
     {
         spawnTime = Time.time;
+        spellEmitter = GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class PlayerSpell : MonoBehaviour
     // para colisiones con el entorno
     private void OnCollisionEnter(Collision collision)
     {
+        spellEmitter.Play();
         Destroy(gameObject);
     }
 
@@ -50,6 +53,7 @@ public class PlayerSpell : MonoBehaviour
         {
             other.gameObject.GetComponent<Enemy>().receiveDamage(10);
         }
+        spellEmitter.Play();
         Destroy(gameObject);
     }
 }

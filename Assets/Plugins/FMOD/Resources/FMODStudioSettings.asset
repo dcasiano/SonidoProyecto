@@ -452,10 +452,14 @@ MonoBehaviour:
   - Master
   Banks:
   - BGM
+  - BossSpell
   - EnemySFX
+  - JugadorAtaqueVoz
   - Others
   - PlayerMovement
+  - PlayerSpell
   - PlayerSwordAttack
+  - Spell
   BanksToLoad:
   - Master
   - Master.strings

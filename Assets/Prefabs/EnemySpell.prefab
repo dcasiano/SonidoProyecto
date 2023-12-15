@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 189888125865032676}
   - component: {fileID: 3741474573775990185}
   - component: {fileID: -4753585838658373214}
+  - component: {fileID: -2726109752015794354}
   m_Layer: 3
   m_Name: EnemySpell
   m_TagString: Untagged
@@ -129,3 +130,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 60
   damage: 40
+--- !u!114 &-2726109752015794354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189888125865032675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2141816961
+      Data2: 1335061218
+      Data3: 859442345
+      Data4: 1776024742
+    Path: event:/Spellimpacto
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

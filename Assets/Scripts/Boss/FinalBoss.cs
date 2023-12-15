@@ -21,6 +21,10 @@ public class FinalBoss : MonoBehaviour
     public GameObject spellDetector; // Para detectar los hechizos del jugador
     public GameObject bossSpell; // Prefab del hechizo del boss
 
+    public GameObject soundEmitters;
+
+    FMODUnity.StudioEventEmitter spellEmitter;
+
     private Rigidbody rb;
     private Animator anim;
     private int health; // La salud actual
@@ -61,6 +65,7 @@ public class FinalBoss : MonoBehaviour
         swordAttackArea.SetActive(false);
         shield.SetActive(false);
         spellDetector.SetActive(false);
+        spellEmitter = soundEmitters.transform.Find("SpellSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     void Update()
@@ -135,6 +140,7 @@ public class FinalBoss : MonoBehaviour
                 {
                     anim.SetBool("isCastingSpell", true);
                     Invoke("CastSpell", 0.5f);
+                    spellEmitter.Play();
                     bossSpellTimer = -1;
                 }
             }

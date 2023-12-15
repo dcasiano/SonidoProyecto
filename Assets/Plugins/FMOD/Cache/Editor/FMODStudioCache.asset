@@ -39,10 +39,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638381912204562862
+  lastModified: 638382661217523077
   FileSizes:
   - Name: Desktop
-    Value: 69856
+    Value: 79104
   Exists: 1
 --- !u!114 &-6454637528121972309
 MonoBehaviour:
@@ -118,7 +118,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 391
+  Length: 510
 --- !u!114 &-5551726533492627865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +197,53 @@ MonoBehaviour:
   - Med
   - Final
   Exists: 1
+--- !u!114 &-4269405022405839693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PlayerSpell.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/PlayerSpell.bank
+  Name: PlayerSpell
+  StudioPath: bank:/PlayerSpell
+  lastModified: 638382608023127611
+  FileSizes:
+  - Name: Desktop
+    Value: 13376
+  Exists: 1
+--- !u!114 &-4053059587280925245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AtaqueSpellJugador
+  m_EditorClassIdentifier: 
+  Path: event:/AtaqueSpellJugador
+  Guid:
+    Data1: -246951385
+    Data2: 1133784789
+    Data3: -381122125
+    Data4: -1106603268
+  Banks:
+  - {fileID: -4269405022405839693}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1469
 --- !u!114 &-3433029383019282934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,11 +259,38 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638381912203886331
+  lastModified: 638382608019958039
   FileSizes:
   - Name: Desktop
     Value: 41472
   Exists: 1
+--- !u!114 &-3432011035343905450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Spellimpacto
+  m_EditorClassIdentifier: 
+  Path: event:/Spellimpacto
+  Guid:
+    Data1: 2141816961
+    Data2: 1335061218
+    Data3: 859442345
+    Data4: 1776024742
+  Banks:
+  - {fileID: 4814723149983991018}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1081
 --- !u!114 &-2701700394671411080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,11 +306,58 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381912203943008
+  lastModified: 638382661217073058
   FileSizes:
   - Name: Desktop
-    Value: 1680
+    Value: 2054
   Exists: 1
+--- !u!114 &-2077301105336504789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/JugadorAtaqueVoz.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/JugadorAtaqueVoz.bank
+  Name: JugadorAtaqueVoz
+  StudioPath: bank:/JugadorAtaqueVoz
+  lastModified: 638382661217841556
+  FileSizes:
+  - Name: Desktop
+    Value: 15040
+  Exists: 1
+--- !u!114 &-816047495353849365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/JugadorAtaqueVoz
+  m_EditorClassIdentifier: 
+  Path: event:/JugadorAtaqueVoz
+  Guid:
+    Data1: -1638740675
+    Data2: 1093149992
+    Data3: 1261495961
+    Data4: 1571306947
+  Banks:
+  - {fileID: -2077301105336504789}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,6 +378,10 @@ MonoBehaviour:
   - {fileID: -7305927427929535019}
   - {fileID: 6624637774618417616}
   - {fileID: 8358026264281388741}
+  - {fileID: -4269405022405839693}
+  - {fileID: 4814723149983991018}
+  - {fileID: 4081784757849563045}
+  - {fileID: -2077301105336504789}
   EditorEvents:
   - {fileID: 4813325953663150308}
   - {fileID: 2300054145303546221}
@@ -268,6 +393,10 @@ MonoBehaviour:
   - {fileID: -5551726533492627865}
   - {fileID: 9220073360956722054}
   - {fileID: -5667142503585957080}
+  - {fileID: -4053059587280925245}
+  - {fileID: -3432011035343905450}
+  - {fileID: 6143822403647449226}
+  - {fileID: -816047495353849365}
   EditorParameters:
   - {fileID: -5051430448290824846}
   - {fileID: -5923312214990895502}
@@ -275,7 +404,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638381912205221103
+  cacheTime: 638382661217841556
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -326,7 +455,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 90
+  MaxDistance: 20
   Length: 500
 --- !u!114 &2300054145303546221
 MonoBehaviour:
@@ -356,6 +485,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 880
+--- !u!114 &4081784757849563045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BossSpell.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/BossSpell.bank
+  Name: BossSpell
+  StudioPath: bank:/BossSpell
+  lastModified: 638382621740217028
+  FileSizes:
+  - Name: Desktop
+    Value: 21920
+  Exists: 1
 --- !u!114 &4813325953663150308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +536,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 62134
+--- !u!114 &4814723149983991018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Spell.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/Spell.bank
+  Name: Spell
+  StudioPath: bank:/Spell
+  lastModified: 638382611129437056
+  FileSizes:
+  - Name: Desktop
+    Value: 16256
+  Exists: 1
 --- !u!114 &5177845321522677747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,7 +598,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381912203686858
+  lastModified: 638382608018880979
   FileSizes:
   - Name: Desktop
     Value: 589152
@@ -461,6 +630,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 662
+--- !u!114 &6143822403647449226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AtaqueSpellBoss
+  m_EditorClassIdentifier: 
+  Path: event:/AtaqueSpellBoss
+  Guid:
+    Data1: 1598470120
+    Data2: 1098539839
+    Data3: 1791978427
+    Data4: 815233344
+  Banks:
+  - {fileID: 4081784757849563045}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2196
 --- !u!114 &6442998476236520094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,7 +696,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSwordAttack.bank
   Name: PlayerSwordAttack
   StudioPath: bank:/PlayerSwordAttack
-  lastModified: 638381912205221103
+  lastModified: 638381886345007772
   FileSizes:
   - Name: Desktop
     Value: 60256
@@ -547,7 +743,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381912203933033
+  lastModified: 638382661217063079
   FileSizes:
   - Name: Desktop
     Value: 1374
@@ -591,7 +787,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Others.bank
   Name: Others
   StudioPath: bank:/Others
-  lastModified: 638381912204122528
+  lastModified: 638382608022302626
   FileSizes:
   - Name: Desktop
     Value: 152640
@@ -644,7 +840,7 @@ MonoBehaviour:
     Data4: -352073151
   Banks:
   - {fileID: 8358026264281388741}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []

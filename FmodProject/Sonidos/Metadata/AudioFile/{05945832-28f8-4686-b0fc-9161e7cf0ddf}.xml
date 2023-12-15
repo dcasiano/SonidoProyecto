@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{05945832-28f8-4686-b0fc-9161e7cf0ddf}">
+		<property name="assetPath">
+			<value>Player/OOT_AdultLink_Hurt1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.570702947845805</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>
+		</relationship>
+	</object>
+</objects>

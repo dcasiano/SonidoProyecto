@@ -12,13 +12,14 @@ public class BossSpell : MonoBehaviour
     private GameObject player;
     private Vector3 direction;
     private float lifeTime = 5f, spawnTime;
-    
+    FMODUnity.StudioEventEmitter spellEmitter;
+
     void Start()
     {
         spawnTime = Time.time;
         player = GameObject.Find("Player");
+        spellEmitter = GetComponent<FMODUnity.StudioEventEmitter>();
     }
-
     
     void Update()
     {
@@ -35,6 +36,7 @@ public class BossSpell : MonoBehaviour
     // para colisiones con el entorno
     private void OnCollisionEnter(Collision collision)
     {
+        spellEmitter.Play();
         Destroy(gameObject);
     }
 
@@ -46,6 +48,7 @@ public class BossSpell : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerController>().receiveDamage(30);
         }
+        spellEmitter.Play();
         Destroy(gameObject);
     }
 }

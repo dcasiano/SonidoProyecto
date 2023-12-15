@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour
     FMODUnity.StudioEventEmitter rollEmitter;
     FMODUnity.StudioEventEmitter swordEmitter;
     FMODUnity.StudioEventEmitter swordClashEmitter;
+    FMODUnity.StudioEventEmitter spellEmitter;
+    FMODUnity.StudioEventEmitter voiceAttackEmitter;
+    FMODUnity.StudioEventEmitter voiceHurtEmitter;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,13 +50,14 @@ public class PlayerController : MonoBehaviour
         health = maxHealth;
         anim = GetComponent<Animator>();
         attackArea.SetActive(false);
-        //emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
+        
         moveEmitter = soundEmitters.transform.Find("MovSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         rollEmitter = soundEmitters.transform.Find("RollSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         swordEmitter = soundEmitters.transform.Find("SwordSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         swordClashEmitter = soundEmitters.transform.Find("SwordClashSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
-        //if (emitter) Debug.Log("Emitter encontrado");
-
+        spellEmitter = soundEmitters.transform.Find("SpellSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        voiceAttackEmitter = soundEmitters.transform.Find("VoiceAttackSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        voiceHurtEmitter = soundEmitters.transform.Find("VoiceHurtSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
     }
 
     // Update is called once per frame
@@ -78,7 +82,7 @@ public class PlayerController : MonoBehaviour
             swordAttacking = true;
             swordAttStartTime = Time.time;
             attackArea.SetActive(true);
-
+            if (!voiceAttackEmitter.IsPlaying()) voiceAttackEmitter.Play();
         }
         if (swordAttacking && swordAttStartTime + swordAttTime < Time.time)
         {
@@ -92,6 +96,7 @@ public class PlayerController : MonoBehaviour
             spellAttacking = true;
             spellStartTime = Time.time;
             Invoke("castSpell", 0.5f);
+            spellEmitter.Play();
         }
         if (spellAttacking && spellStartTime + spellTime < Time.time) spellAttacking = false;
     }
@@ -142,6 +147,7 @@ public class PlayerController : MonoBehaviour
             currentSpeed = 0;
             anim.SetBool("swordAttacking", true);
             moveEmitter.EventInstance.setParameterByName("Movement", 0);
+            
             if (GameManager.GetInstance().GetBossAttackCancelled())
             {
                 if (!swordClashEmitter.IsPlaying()) swordClashEmitter.Play();
@@ -191,7 +197,11 @@ public class PlayerController : MonoBehaviour
             health = 0;
             isDead = true;
         }
-        else anim.SetBool("isReceivingDamage", true);
+        else
+        {
+            anim.SetBool("isReceivingDamage", true);
+            if (!voiceHurtEmitter.IsPlaying()) voiceHurtEmitter.Play();
+        }
         Debug.Log("Player hp: " + health);
     }
     public void Heal()
