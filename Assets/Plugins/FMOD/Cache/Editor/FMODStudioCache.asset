@@ -39,10 +39,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638382661217523077
+  lastModified: 638383490164795561
   FileSizes:
   - Name: Desktop
-    Value: 79104
+    Value: 92608
   Exists: 1
 --- !u!114 &-6454637528121972309
 MonoBehaviour:
@@ -115,10 +115,11 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 3557575150043700127}
   MinDistance: 1
   MaxDistance: 20
-  Length: 510
+  Length: 763
 --- !u!114 &-5551726533492627865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,10 +307,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638382661217073058
+  lastModified: 638383490163956016
   FileSizes:
   - Name: Desktop
-    Value: 2054
+    Value: 2092
   Exists: 1
 --- !u!114 &-2077301105336504789
 MonoBehaviour:
@@ -404,7 +405,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638382661217841556
+  cacheTime: 638383490164795561
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -485,6 +486,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 880
+--- !u!114 &3557575150043700127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JugadorAtacado/IsDead
+  m_EditorClassIdentifier: 
+  Name: IsDead
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3632572815
+    data2: 2122760310
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &4081784757849563045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +768,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638382661217063079
+  lastModified: 638383490163946048
   FileSizes:
   - Name: Desktop
     Value: 1374

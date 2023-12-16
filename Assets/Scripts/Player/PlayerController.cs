@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -196,12 +197,14 @@ public class PlayerController : MonoBehaviour
         {
             health = 0;
             isDead = true;
+            voiceHurtEmitter.EventInstance.setParameterByName("IsDead", 1);
         }
         else
         {
             anim.SetBool("isReceivingDamage", true);
-            if (!voiceHurtEmitter.IsPlaying()) voiceHurtEmitter.Play();
+            voiceHurtEmitter.EventInstance.setParameterByName("IsDead", 0);
         }
+        if (!voiceHurtEmitter.IsPlaying()) voiceHurtEmitter.Play();
         Debug.Log("Player hp: " + health);
     }
     public void Heal()
