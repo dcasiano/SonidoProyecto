@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject Ldoor;
     public GameObject Rdoor;
     public GameObject door;
+    public GameObject Disco;
     private int numEnemies = 5;
     private bool playerDead = false;
     private bool bossAttackCancelled = false;
@@ -79,5 +80,15 @@ public class GameManager : MonoBehaviour
     public bool GetBossAttackCancelled()
     {
         return bossAttackCancelled;
+    }
+    public void BossDeath()
+    {
+        Debug.Log("win");
+        GameObject.FindGameObjectWithTag("BGM").GetComponent<BGM>().setWin();
+        Invoke("ActiveDisco", 8);
+    }
+    void ActiveDisco()
+    {
+        Disco.SetActive(true);
     }
 }

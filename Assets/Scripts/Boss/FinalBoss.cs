@@ -60,6 +60,7 @@ public class FinalBoss : MonoBehaviour
     FMOD.Studio.EventInstance bossMuerte;
     FMOD.Studio.EventInstance bossEscudo;
     FMOD.Studio.EventInstance bossStart;
+    FMOD.Studio.EventInstance bossBerseker;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -76,6 +77,7 @@ public class FinalBoss : MonoBehaviour
         bossMuerte = FMODUnity.RuntimeManager.CreateInstance("event:/BossMuerte");
         bossEscudo = FMODUnity.RuntimeManager.CreateInstance("event:/BossEscudo");
         bossStart = FMODUnity.RuntimeManager.CreateInstance("event:/BossStart");
+        bossBerseker = FMODUnity.RuntimeManager.CreateInstance("event:/BossSecond");
     }
 
     void Update()
@@ -285,6 +287,7 @@ public class FinalBoss : MonoBehaviour
     {
         bossMuerte.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
         bossMuerte.start();
+        GameManager.GetInstance().BossDeath();
     }
 
     // Cuando el boss entra en la segunda fase
@@ -292,6 +295,11 @@ public class FinalBoss : MonoBehaviour
     // por defecto en esta fase
     private void OnBerserkerEnter()
     {
+        if (!isBerserker)
+        {
+            bossBerseker.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
+            bossBerseker.start();
+        }
         isBerserker = true;
         GetComponent<NavMeshAgent>().speed = 8;
         anim.SetBool("isBerserker", true);

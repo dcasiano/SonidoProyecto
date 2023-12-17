@@ -39,7 +39,7 @@ public class EnemyRanged : MonoBehaviour
     private int helpers = 0;
 
     //Sonido
-    FMODUnity.StudioEventEmitter hacha;
+    FMOD.Studio.EventInstance hacha;
     FMODUnity.StudioEventEmitter pasos;
     FMOD.Studio.EventInstance hechizo;
     // Start is called before the first frame update
@@ -54,7 +54,7 @@ public class EnemyRanged : MonoBehaviour
         EmptyEnemies = GameObject.Find("EnemyEmpty");
 
         pasos = GetComponent<FMODUnity.StudioEventEmitter>();
-        hacha = GetComponentInChildren<FMODUnity.StudioEventEmitter>();
+        hacha = FMODUnity.RuntimeManager.CreateInstance("event:/HachaEnemigo");
         hechizo = FMODUnity.RuntimeManager.CreateInstance("event:/HechizoEnemigo");
     }
 
@@ -116,7 +116,8 @@ public class EnemyRanged : MonoBehaviour
 
         GameObject proyectile = Instantiate(proyectilePref, transform.position + dir * 4 + new Vector3(0, 2, 0), Quaternion.identity);
         proyectile.GetComponent<EnemyProyectile>().setDirection(dir);
-        hacha.Play();
+        hacha.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(proyectile));
+        hacha.start();
     }
 
     //merodeo

@@ -11,6 +11,8 @@ TagManager:
   - Puerta
   - Cantante
   - ReberbZone
+  - BGM
+  - Disco
   layers:
   - Default
   - TransparentFX

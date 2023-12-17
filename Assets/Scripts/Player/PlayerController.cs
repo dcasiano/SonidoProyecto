@@ -194,6 +194,10 @@ public class PlayerController : MonoBehaviour
         // si esta rodando esquiva el ataque
         if (isRolling || isDead || noDamage) return;
         health -= damage;
+        if (health <= 30)
+        {
+            GameObject.FindGameObjectWithTag("BGM").GetComponent<BGM>().setLowLife(true);
+        }
         if (health <= 0)
         {
             health = 0;
@@ -211,6 +215,7 @@ public class PlayerController : MonoBehaviour
     public void Heal()
     {
         health = maxHealth;
+        GameObject.FindGameObjectWithTag("BGM").GetComponent<BGM>().setLowLife(false);
     }
     public int GetHealth()
     {

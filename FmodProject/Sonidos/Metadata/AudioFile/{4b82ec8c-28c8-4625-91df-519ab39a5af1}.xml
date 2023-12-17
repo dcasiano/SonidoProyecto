@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4b82ec8c-28c8-4625-91df-519ab39a5af1}">
+		<property name="assetPath">
+			<value>BGM/BossBGM-01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>34.848390022675737</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>
+		</relationship>
+	</object>
+</objects>

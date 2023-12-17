@@ -26,32 +26,8 @@ MonoBehaviour:
   Parameters:
   - {fileID: -3469233151962333556}
   MinDistance: 1
-  MaxDistance: 50
-  Length: 4951
---- !u!114 &-8547101124951871041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ambiente/Reverb
-  m_EditorClassIdentifier: 
-  Name: Reverb
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3115610141
-    data2: 2410959346
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
+  MaxDistance: 90
+  Length: 3010
 --- !u!114 &-8308473371059944386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,7 +78,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3500
+  Length: 1341
 --- !u!114 &-7577764540800681639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,7 +359,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-4761463238635350849
+--- !u!114 &-4683669574843612484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -393,22 +369,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ambiente/Ambiente
+  m_Name: parameter:/Spellimpacto/Reverb
   m_EditorClassIdentifier: 
-  Name: Ambiente
+  Name: Reverb
   StudioPath: 
   Min: 0
-  Max: 2
+  Max: 1
   Default: 0
   ID:
-    data1: 3823499147
-    data2: 328855723
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - Init
-  - Med
-  - Final
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-4662913732941532174
 MonoBehaviour:
@@ -469,10 +442,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BossSFX.bank
   Name: BossSFX
   StudioPath: bank:/BossSFX
-  lastModified: 638384255377709773
+  lastModified: 638384297969784178
   FileSizes:
   - Name: Desktop
-    Value: 188896
+    Value: 175520
   Exists: 1
 --- !u!114 &-4053059587280925245
 MonoBehaviour:
@@ -541,10 +514,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638384243188019767
+  lastModified: 638384308611081534
   FileSizes:
   - Name: Desktop
-    Value: 128704
+    Value: 72576
   Exists: 1
 --- !u!114 &-3432011035343905450
 MonoBehaviour:
@@ -569,10 +542,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -4683669574843612484}
   MinDistance: 1
   MaxDistance: 20
   Length: 1081
+--- !u!114 &-2754604980788480199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambiente/Win
+  m_EditorClassIdentifier: 
+  Name: Win
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4099782648
+    data2: 988935655
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2701700394671411080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,10 +586,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638384261293304958
+  lastModified: 638384322185252115
   FileSizes:
   - Name: Desktop
-    Value: 2424
+    Value: 2466
   Exists: 1
 --- !u!114 &-2077301105336504789
 MonoBehaviour:
@@ -788,6 +786,7 @@ MonoBehaviour:
   - {fileID: -1537780408891118582}
   - {fileID: -9112530853034018961}
   - {fileID: -7577764540800681639}
+  - {fileID: 8734489096147981920}
   EditorParameters:
   - {fileID: -5051430448290824846}
   - {fileID: -5923312214990895502}
@@ -795,7 +794,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638384261817931039
+  cacheTime: 638384322185252115
   cacheVersion: 131609
 --- !u!114 &47594074092311661
 MonoBehaviour:
@@ -1117,13 +1116,12 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -4761463238635350849}
   - {fileID: 1238084834970744403}
-  - {fileID: -8547101124951871041}
   - {fileID: -6454637528121972309}
+  - {fileID: -2754604980788480199}
   MinDistance: 1
   MaxDistance: 20
-  Length: 62134
+  Length: 122074
 --- !u!114 &4814723149983991018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,10 +1137,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Spell.bank
   Name: Spell
   StudioPath: bank:/Spell
-  lastModified: 638384203507063666
+  lastModified: 638384268019993373
   FileSizes:
   - Name: Desktop
-    Value: 16256
+    Value: 17088
   Exists: 1
 --- !u!114 &5177845321522677747
 MonoBehaviour:
@@ -1187,10 +1185,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638381912203686858
+  lastModified: 638384322185152387
   FileSizes:
   - Name: Desktop
-    Value: 589152
+    Value: 1211232
   Exists: 1
 --- !u!114 &6104489914891687737
 MonoBehaviour:
@@ -1334,7 +1332,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638384261293281629
+  lastModified: 638384322185232427
   FileSizes:
   - Name: Desktop
     Value: 1374
@@ -1383,6 +1381,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 209216
   Exists: 1
+--- !u!114 &8734489096147981920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossSecond
+  m_EditorClassIdentifier: 
+  Path: event:/BossSecond
+  Guid:
+    Data1: 1933993438
+    Data2: 1074035489
+    Data3: -109615737
+    Data4: 24746028
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 65
+  Length: 2660
 --- !u!114 &8858737230394266801
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,6 +33,7 @@ public class DoorDetector : MonoBehaviour
             RDoor.SetActive(true);
             RDoor.GetComponent<Animator>().enabled = false;
             gameObject.SetActive(false);
+            GameObject.FindGameObjectWithTag("BGM").GetComponent<BGM>().setBoss();
         }
     }
 }
