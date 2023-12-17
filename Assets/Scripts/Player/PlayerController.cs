@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     public float spellCooldown = 2f;
     public int maxHealth = 100;
+    public bool noDamage = false;
     public GameObject spellPrefab;
     public GameObject attackArea;
     public GameObject soundEmitters;
@@ -191,7 +192,7 @@ public class PlayerController : MonoBehaviour
     public void receiveDamage(int damage)
     {
         // si esta rodando esquiva el ataque
-        if (isRolling || isDead) return;
+        if (isRolling || isDead || noDamage) return;
         health -= damage;
         if (health <= 0)
         {

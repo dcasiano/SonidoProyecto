@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9112530853034018961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossStart
+  m_EditorClassIdentifier: 
+  Path: event:/BossStart
+  Guid:
+    Data1: 1221736400
+    Data2: 1187782959
+    Data3: -1724539458
+    Data4: 1301400708
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3469233151962333556}
+  MinDistance: 1
+  MaxDistance: 50
+  Length: 4951
 --- !u!114 &-8547101124951871041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,6 +52,85 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-8308473371059944386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JugadorAtacado/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-7983084436471371581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EnemyDead
+  m_EditorClassIdentifier: 
+  Path: event:/EnemyDead
+  Guid:
+    Data1: -733031090
+    Data2: 1323237385
+    Data3: -1009317187
+    Data4: -1511755669
+  Banks:
+  - {fileID: -3433029383019282934}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
+--- !u!114 &-7577764540800681639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hoguera
+  m_EditorClassIdentifier: 
+  Path: event:/Hoguera
+  Guid:
+    Data1: 2070202410
+    Data2: 1308667853
+    Data3: -2077158988
+    Data4: 823034815
+  Banks:
+  - {fileID: 8358026264281388741}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7141469068170996079}
+  MinDistance: 1
+  MaxDistance: 15
+  Length: 3759
 --- !u!114 &-7305927427929535019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,10 +146,58 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638384203506442983
+  lastModified: 638384255377087963
   FileSizes:
   - Name: Desktop
-    Value: 92608
+    Value: 94432
+  Exists: 1
+--- !u!114 &-7141469068170996079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hoguera/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-6556170133503034677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AtaqueSpellJugador/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &-6454637528121972309
 MonoBehaviour:
@@ -117,6 +272,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 3557575150043700127}
+  - {fileID: -8308473371059944386}
   MinDistance: 1
   MaxDistance: 20
   Length: 763
@@ -170,9 +326,10 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -495691775995440485}
   MinDistance: 1
-  MaxDistance: 45
+  MaxDistance: 35
   Length: 663
 --- !u!114 &-5478839191015514875
 MonoBehaviour:
@@ -197,10 +354,11 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -2014891322436889612}
   MinDistance: 1
-  MaxDistance: 20
-  Length: 6530
+  MaxDistance: 45
+  Length: 3397
 --- !u!114 &-5051430448290824846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,6 +410,30 @@ MonoBehaviour:
   - Med
   - Final
   Exists: 1
+--- !u!114 &-4662913732941532174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BossEscudo/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-4269405022405839693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,10 +449,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSpell.bank
   Name: PlayerSpell
   StudioPath: bank:/PlayerSpell
-  lastModified: 638384203506841916
+  lastModified: 638384255377277459
   FileSizes:
   - Name: Desktop
-    Value: 13376
+    Value: 14208
   Exists: 1
 --- !u!114 &-4156951983451907912
 MonoBehaviour:
@@ -287,10 +469,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BossSFX.bank
   Name: BossSFX
   StudioPath: bank:/BossSFX
-  lastModified: 638384227643555482
+  lastModified: 638384255377709773
   FileSizes:
   - Name: Desktop
-    Value: 118112
+    Value: 188896
   Exists: 1
 --- !u!114 &-4053059587280925245
 MonoBehaviour:
@@ -315,10 +497,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -6556170133503034677}
   MinDistance: 1
   MaxDistance: 20
   Length: 1469
+--- !u!114 &-3469233151962333556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BossStart/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-3433029383019282934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,10 +541,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638384203505040964
+  lastModified: 638384243188019767
   FileSizes:
   - Name: Desktop
-    Value: 41472
+    Value: 128704
   Exists: 1
 --- !u!114 &-3432011035343905450
 MonoBehaviour:
@@ -381,10 +588,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638384226767253821
+  lastModified: 638384261293304958
   FileSizes:
   - Name: Desktop
-    Value: 2274
+    Value: 2424
   Exists: 1
 --- !u!114 &-2077301105336504789
 MonoBehaviour:
@@ -401,11 +608,87 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/JugadorAtaqueVoz.bank
   Name: JugadorAtaqueVoz
   StudioPath: bank:/JugadorAtaqueVoz
-  lastModified: 638384203505340148
+  lastModified: 638384255376825623
   FileSizes:
   - Name: Desktop
-    Value: 15040
+    Value: 15872
   Exists: 1
+--- !u!114 &-2014891322436889612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BossMuerte/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1992049804274724330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ChoqueEspadas/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1537780408891118582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossEscudo
+  m_EditorClassIdentifier: 
+  Path: event:/BossEscudo
+  Guid:
+    Data1: 2119519812
+    Data2: 1139676561
+    Data3: -1354889832
+    Data4: 883875745
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4662913732941532174}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1190
 --- !u!114 &-816047495353849365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,10 +712,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 498457516165128340}
   MinDistance: 1
   MaxDistance: 20
   Length: 400
+--- !u!114 &-495691775995440485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BossAndar/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +784,10 @@ MonoBehaviour:
   - {fileID: 2412283747630821845}
   - {fileID: -5478839191015514875}
   - {fileID: -5502198989964309395}
+  - {fileID: -7983084436471371581}
+  - {fileID: -1537780408891118582}
+  - {fileID: -9112530853034018961}
+  - {fileID: -7577764540800681639}
   EditorParameters:
   - {fileID: -5051430448290824846}
   - {fileID: -5923312214990895502}
@@ -483,8 +795,104 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638384227643555482
+  cacheTime: 638384261817931039
   cacheVersion: 131609
+--- !u!114 &47594074092311661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MovimientoJugador/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &498457516165128340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/JugadorAtaqueVoz/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &545120000116229220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VolteretaJugador/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1217627905891035116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AtaqueEspadaJugador/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &1238084834970744403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +914,30 @@ MonoBehaviour:
     data1: 3776645229
     data2: 214401080
   Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1914058657134690571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AtaqueSpellBoss/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
   IsGlobal: 1
   Labels: []
   Exists: 1
@@ -561,6 +993,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 6442998476236520094}
+  - {fileID: 47594074092311661}
   MinDistance: 1
   MaxDistance: 20
   Length: 880
@@ -587,10 +1020,35 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 3279131433841589319}
   MinDistance: 1
-  MaxDistance: 30
+  MaxDistance: 20
   Length: 1636
+--- !u!114 &3279131433841589319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BossAtaque/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3115610141
+    data2: 2410959346
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3557575150043700127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,10 +1088,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BossSpell.bank
   Name: BossSpell
   StudioPath: bank:/BossSpell
-  lastModified: 638384203504801350
+  lastModified: 638384255376616177
   FileSizes:
   - Name: Desktop
-    Value: 21920
+    Value: 22752
   Exists: 1
 --- !u!114 &4813325953663150308
 MonoBehaviour:
@@ -709,7 +1167,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -1992049804274724330}
   MinDistance: 1
   MaxDistance: 20
   Length: 1752
@@ -756,7 +1215,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 545120000116229220}
   MinDistance: 1
   MaxDistance: 20
   Length: 662
@@ -783,7 +1243,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 1914058657134690571}
   MinDistance: 1
   MaxDistance: 20
   Length: 2196
@@ -826,10 +1287,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSwordAttack.bank
   Name: PlayerSwordAttack
   StudioPath: bank:/PlayerSwordAttack
-  lastModified: 638381912205221103
+  lastModified: 638384255377460427
   FileSizes:
   - Name: Desktop
-    Value: 60256
+    Value: 61568
   Exists: 1
 --- !u!114 &6784778959591126986
 MonoBehaviour:
@@ -873,7 +1334,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638384226767243866
+  lastModified: 638384261293281629
   FileSizes:
   - Name: Desktop
     Value: 1374
@@ -917,10 +1378,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Others.bank
   Name: Others
   StudioPath: bank:/Others
-  lastModified: 638384203505969194
+  lastModified: 638384261817931039
   FileSizes:
   - Name: Desktop
-    Value: 152640
+    Value: 209216
   Exists: 1
 --- !u!114 &8858737230394266801
 MonoBehaviour:
@@ -947,6 +1408,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 8142295507436138645}
+  - {fileID: 1217627905891035116}
   MinDistance: 1
   MaxDistance: 20
   Length: 1000

@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     public enum Rol { Mele, Ranged, None }
     public Rol enemyRol = Rol.None;
 
-
+    FMOD.Studio.EventInstance death;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
         rb.freezeRotation = true;
         health = maxHealth;
         EmptyEnemies = GameObject.Find("EnemyEmpty");
-
+        death = FMODUnity.RuntimeManager.CreateInstance("event:/EnemyDead");    
         //se asignan los roles
         AssignRoles();
     }
@@ -63,6 +63,8 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (health <= 0)
         {
+            death.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
+            death.start();
             health = 0;
             for (int i = 0; i < EmptyEnemies.transform.childCount; i++)
             {

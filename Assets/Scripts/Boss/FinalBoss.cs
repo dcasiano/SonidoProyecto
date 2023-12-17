@@ -58,6 +58,8 @@ public class FinalBoss : MonoBehaviour
     FMOD.Studio.EventInstance swordAttackssfx;
     FMOD.Studio.EventInstance bossWalk;
     FMOD.Studio.EventInstance bossMuerte;
+    FMOD.Studio.EventInstance bossEscudo;
+    FMOD.Studio.EventInstance bossStart;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -72,6 +74,8 @@ public class FinalBoss : MonoBehaviour
         swordAttackssfx = FMODUnity.RuntimeManager.CreateInstance("event:/BossAtaque");
         bossWalk = FMODUnity.RuntimeManager.CreateInstance("event:/BossAndar");
         bossMuerte = FMODUnity.RuntimeManager.CreateInstance("event:/BossMuerte");
+        bossEscudo = FMODUnity.RuntimeManager.CreateInstance("event:/BossEscudo");
+        bossStart = FMODUnity.RuntimeManager.CreateInstance("event:/BossStart");
     }
 
     void Update()
@@ -244,6 +248,8 @@ public class FinalBoss : MonoBehaviour
         if (!isBerserker) return;
         playerSpellWillCollide = true;
         anim.SetBool("isProtecting", true);
+        bossEscudo.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(shield.gameObject));
+        bossEscudo.start();
         // Reseteamos todo pasado 1 sec
         Invoke("ResetPlayerSpellDetected", 1.0f);
     }
@@ -261,6 +267,8 @@ public class FinalBoss : MonoBehaviour
     public void AwakeBoss()
     {
         if (IsActive()) return;
+        bossStart.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
+        bossStart.start();
         currentState = State.Chasing;
     }
     public void playAttackSound()
