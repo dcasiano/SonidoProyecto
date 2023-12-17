@@ -40,20 +40,23 @@ public class PlayerSpell : MonoBehaviour
     // para colisiones con enemigos
     private void OnTriggerEnter(Collider other)
     {
-        // Todos los enemigos a los que se puede hacer daño
-        if (other.gameObject.GetComponent<BossFrontArea>() != null)
-        {
-            other.gameObject.GetComponent<BossFrontArea>().dealDamage(10);
+        if (!other.gameObject.CompareTag("ReberbZone")){
+            // Todos los enemigos a los que se puede hacer daño
+            if (other.gameObject.GetComponent<BossFrontArea>() != null)
+            {
+                other.gameObject.GetComponent<BossFrontArea>().dealDamage(10);
+            }
+            else if (other.gameObject.GetComponent<BossBackArea>() != null)
+            {
+                other.gameObject.GetComponent<BossBackArea>().dealDamage(20);
+            }
+            if (other.gameObject.GetComponent<Enemy>() != null)
+            {
+                other.gameObject.GetComponent<Enemy>().receiveDamage(10);
+            }
+            spellEmitter.Play();
+            Destroy(gameObject);
         }
-        else if (other.gameObject.GetComponent<BossBackArea>() != null)
-        {
-            other.gameObject.GetComponent<BossBackArea>().dealDamage(20);
-        }
-        if (other.gameObject.GetComponent<Enemy>() != null)
-        {
-            other.gameObject.GetComponent<Enemy>().receiveDamage(10);
-        }
-        spellEmitter.Play();
-        Destroy(gameObject);
+
     }
 }
