@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ae8a1f69-8b24-418c-8516-f2e3c0f196fb}">
+		<property name="assetPath">
+			<value>Boss/AndarBoss-01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.66379166666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>
+		</relationship>
+	</object>
+</objects>

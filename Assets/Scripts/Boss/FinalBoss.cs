@@ -57,6 +57,7 @@ public class FinalBoss : MonoBehaviour
     // Se cachean componentes, inicializan varibles y desactivan ciertos gameobjects
     FMOD.Studio.EventInstance swordAttackssfx;
     FMOD.Studio.EventInstance bossWalk;
+    FMOD.Studio.EventInstance bossMuerte;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -69,7 +70,8 @@ public class FinalBoss : MonoBehaviour
         spellDetector.SetActive(false);
         spellEmitter = soundEmitters.transform.Find("SpellSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
         swordAttackssfx = FMODUnity.RuntimeManager.CreateInstance("event:/BossAtaque");
-        bossWalk = FMODUnity.RuntimeManager.CreateInstance("event:/PasoEnemigo");
+        bossWalk = FMODUnity.RuntimeManager.CreateInstance("event:/BossAndar");
+        bossMuerte = FMODUnity.RuntimeManager.CreateInstance("event:/BossMuerte");
     }
 
     void Update()
@@ -270,6 +272,11 @@ public class FinalBoss : MonoBehaviour
     {
         bossWalk.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
         bossWalk.start();
+    }
+    public void playDead()
+    {
+        bossMuerte.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
+        bossMuerte.start();
     }
 
     // Cuando el boss entra en la segunda fase

@@ -43,12 +43,15 @@ public class BossSpell : MonoBehaviour
     // para colisiones con enemigos
     private void OnTriggerEnter(Collider other)
     {
-        // Si colisiona con el jugador le hace daño
-        if (other.gameObject.GetComponent<PlayerController>() != null)
+        if (!other.CompareTag("ReberbZone"))
         {
-            other.gameObject.GetComponent<PlayerController>().receiveDamage(30);
+            // Si colisiona con el jugador le hace daño
+            if (other.gameObject.GetComponent<PlayerController>() != null)
+            {
+                other.gameObject.GetComponent<PlayerController>().receiveDamage(30);
+            }
+            spellEmitter.Play();
+            Destroy(gameObject);
         }
-        spellEmitter.Play();
-        Destroy(gameObject);
     }
 }

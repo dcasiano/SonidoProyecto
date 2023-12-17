@@ -147,6 +147,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2004
+--- !u!114 &-5502198989964309395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossAndar
+  m_EditorClassIdentifier: 
+  Path: event:/BossAndar
+  Guid:
+    Data1: 312560111
+    Data2: 1172392823
+    Data3: -784064640
+    Data4: 228701530
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 45
+  Length: 663
+--- !u!114 &-5478839191015514875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossMuerte
+  m_EditorClassIdentifier: 
+  Path: event:/BossMuerte
+  Guid:
+    Data1: -1636968617
+    Data2: 1086652660
+    Data3: 1904851373
+    Data4: -1207838339
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6530
 --- !u!114 &-5051430448290824846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,10 +287,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BossSFX.bank
   Name: BossSFX
   StudioPath: bank:/BossSFX
-  lastModified: 638384210021778830
+  lastModified: 638384227643555482
   FileSizes:
   - Name: Desktop
-    Value: 23360
+    Value: 118112
   Exists: 1
 --- !u!114 &-4053059587280925245
 MonoBehaviour:
@@ -327,10 +381,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638384203505429666
+  lastModified: 638384226767253821
   FileSizes:
   - Name: Desktop
-    Value: 2178
+    Value: 2274
   Exists: 1
 --- !u!114 &-2077301105336504789
 MonoBehaviour:
@@ -420,6 +474,8 @@ MonoBehaviour:
   - {fileID: 6143822403647449226}
   - {fileID: -816047495353849365}
   - {fileID: 2412283747630821845}
+  - {fileID: -5478839191015514875}
+  - {fileID: -5502198989964309395}
   EditorParameters:
   - {fileID: -5051430448290824846}
   - {fileID: -5923312214990895502}
@@ -427,7 +483,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638384210021778830
+  cacheTime: 638384227643555482
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -817,7 +873,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638384203505409994
+  lastModified: 638384226767243866
   FileSizes:
   - Name: Desktop
     Value: 1374
