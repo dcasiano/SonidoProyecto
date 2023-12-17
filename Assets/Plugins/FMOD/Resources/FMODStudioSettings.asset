@@ -452,6 +452,7 @@ MonoBehaviour:
   - Master
   Banks:
   - BGM
+  - BossSFX
   - BossSpell
   - EnemySFX
   - JugadorAtaqueVoz

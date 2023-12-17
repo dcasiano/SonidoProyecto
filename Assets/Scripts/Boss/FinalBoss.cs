@@ -53,8 +53,9 @@ public class FinalBoss : MonoBehaviour
     // Estados del boss. Solo hay 3 ya que el resto de estados los abarca el componente state machine.
     enum State { Waiting, Chasing, SwordAttack}
     private State currentState; // Estado actual
-    
+
     // Se cachean componentes, inicializan varibles y desactivan ciertos gameobjects
+    FMOD.Studio.EventInstance swordAttackssfx;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -66,6 +67,7 @@ public class FinalBoss : MonoBehaviour
         shield.SetActive(false);
         spellDetector.SetActive(false);
         spellEmitter = soundEmitters.transform.Find("SpellSoundEmitter").GetComponent<FMODUnity.StudioEventEmitter>();
+        swordAttackssfx = FMODUnity.RuntimeManager.CreateInstance("event:/BossAtaque");
     }
 
     void Update()
@@ -148,7 +150,10 @@ public class FinalBoss : MonoBehaviour
         }
         else if(currentState == State.SwordAttack)
         {
+
             anim.SetBool("isSwordAttacking", true);
+            
+
         }
         
     }
@@ -254,6 +259,11 @@ public class FinalBoss : MonoBehaviour
         if (IsActive()) return;
         currentState = State.Chasing;
     }
+    public void playAttackSound()
+    {
+        swordAttackssfx.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(this.gameObject));
+        swordAttackssfx.start();
+    }
     
     // Cuando el boss entra en la segunda fase
     // Activamos todos los comportamientos que
@@ -296,5 +306,6 @@ public class FinalBoss : MonoBehaviour
         if (anim.GetBool("isDead")) anim.SetBool("isDead", false);
         if (anim.GetBool("isCastingSpell")) anim.SetBool("isCastingSpell", false);
     }
+    
     
 }

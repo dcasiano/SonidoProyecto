@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{2b02af7d-4355-482d-bc99-24c7b9910d02}">
+	<object class="AudioFile" id="{f0521251-8ef6-4371-89a6-1bbe815080b7}">
 		<property name="assetPath">
-			<value>703887__matrixxx__retro-bubble-shot-02.wav</value>
+			<value>86049__nextmaking__sword.aiff</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.394625</value>
+			<value>1.6367708333333333</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{87ff773a-ea9b-4d75-8dd2-fdd7adb076f7}</destination>

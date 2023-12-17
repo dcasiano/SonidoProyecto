@@ -39,7 +39,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerMovement.bank
   Name: PlayerMovement
   StudioPath: bank:/PlayerMovement
-  lastModified: 638383490164795561
+  lastModified: 638384203506442983
   FileSizes:
   - Name: Desktop
     Value: 92608
@@ -213,10 +213,30 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSpell.bank
   Name: PlayerSpell
   StudioPath: bank:/PlayerSpell
-  lastModified: 638382608023127611
+  lastModified: 638384203506841916
   FileSizes:
   - Name: Desktop
     Value: 13376
+  Exists: 1
+--- !u!114 &-4156951983451907912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BossSFX.bank
+  m_EditorClassIdentifier: 
+  Path: FmodProject/Sonidos/Build/Desktop/BossSFX.bank
+  Name: BossSFX
+  StudioPath: bank:/BossSFX
+  lastModified: 638384210021778830
+  FileSizes:
+  - Name: Desktop
+    Value: 23360
   Exists: 1
 --- !u!114 &-4053059587280925245
 MonoBehaviour:
@@ -260,7 +280,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/EnemySFX.bank
   Name: EnemySFX
   StudioPath: bank:/EnemySFX
-  lastModified: 638382608019958039
+  lastModified: 638384203505040964
   FileSizes:
   - Name: Desktop
     Value: 41472
@@ -307,10 +327,10 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638383490163956016
+  lastModified: 638384203505429666
   FileSizes:
   - Name: Desktop
-    Value: 2092
+    Value: 2178
   Exists: 1
 --- !u!114 &-2077301105336504789
 MonoBehaviour:
@@ -327,7 +347,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/JugadorAtaqueVoz.bank
   Name: JugadorAtaqueVoz
   StudioPath: bank:/JugadorAtaqueVoz
-  lastModified: 638382661217841556
+  lastModified: 638384203505340148
   FileSizes:
   - Name: Desktop
     Value: 15040
@@ -383,6 +403,7 @@ MonoBehaviour:
   - {fileID: 4814723149983991018}
   - {fileID: 4081784757849563045}
   - {fileID: -2077301105336504789}
+  - {fileID: -4156951983451907912}
   EditorEvents:
   - {fileID: 4813325953663150308}
   - {fileID: 2300054145303546221}
@@ -398,6 +419,7 @@ MonoBehaviour:
   - {fileID: -3432011035343905450}
   - {fileID: 6143822403647449226}
   - {fileID: -816047495353849365}
+  - {fileID: 2412283747630821845}
   EditorParameters:
   - {fileID: -5051430448290824846}
   - {fileID: -5923312214990895502}
@@ -405,7 +427,7 @@ MonoBehaviour:
   - {fileID: 7777624125797463180}
   StringsBanks:
   - {fileID: -2701700394671411080}
-  cacheTime: 638383490164795561
+  cacheTime: 638384210021778830
   cacheVersion: 131609
 --- !u!114 &1238084834970744403
 MonoBehaviour:
@@ -486,6 +508,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 880
+--- !u!114 &2412283747630821845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BossAtaque
+  m_EditorClassIdentifier: 
+  Path: event:/BossAtaque
+  Guid:
+    Data1: 1497432827
+    Data2: 1152350205
+    Data3: 783864706
+    Data4: 597283248
+  Banks:
+  - {fileID: -4156951983451907912}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 30
+  Length: 1636
 --- !u!114 &3557575150043700127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,7 +574,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BossSpell.bank
   Name: BossSpell
   StudioPath: bank:/BossSpell
-  lastModified: 638382621740217028
+  lastModified: 638384203504801350
   FileSizes:
   - Name: Desktop
     Value: 21920
@@ -576,7 +625,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Spell.bank
   Name: Spell
   StudioPath: bank:/Spell
-  lastModified: 638382611129437056
+  lastModified: 638384203507063666
   FileSizes:
   - Name: Desktop
     Value: 16256
@@ -623,7 +672,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/BGM.bank
   Name: BGM
   StudioPath: bank:/BGM
-  lastModified: 638382608018880979
+  lastModified: 638381912203686858
   FileSizes:
   - Name: Desktop
     Value: 589152
@@ -721,7 +770,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/PlayerSwordAttack.bank
   Name: PlayerSwordAttack
   StudioPath: bank:/PlayerSwordAttack
-  lastModified: 638381886345007772
+  lastModified: 638381912205221103
   FileSizes:
   - Name: Desktop
     Value: 60256
@@ -768,7 +817,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638383490163946048
+  lastModified: 638384203505409994
   FileSizes:
   - Name: Desktop
     Value: 1374
@@ -812,7 +861,7 @@ MonoBehaviour:
   Path: FmodProject/Sonidos/Build/Desktop/Others.bank
   Name: Others
   StudioPath: bank:/Others
-  lastModified: 638382608022302626
+  lastModified: 638384203505969194
   FileSizes:
   - Name: Desktop
     Value: 152640
